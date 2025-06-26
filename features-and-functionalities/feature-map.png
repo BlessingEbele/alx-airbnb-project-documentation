@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Airbnb Clone Backend Features" id="XtLAPZgVkq8iOfdc2SlV">
+    <mxGraphModel dx="1272" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Main title -->
+        <mxCell id="2" value="Features and Functionalities Required for Airbnb Clone Backend" style="shape=rectangle;whiteSpace=wrap;html=1;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="400" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- User Authentication -->
+        <mxCell id="3" value="User Authentication" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="User Registration" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="130" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="User Login and Authentication" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="170" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Profile Management" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="220" width="140" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Property Management -->
+        <mxCell id="7" value="Property Management" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="100" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Add Listings" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="130" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="Edit/Delete Listings" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Location" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="220" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Price Range" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="260" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="Number of Guests" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="300" width="130" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="Amenities" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="340" width="100" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Booking System -->
+        <mxCell id="14" value="Booking System" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="100" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="Booking Creation" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="140" width="140" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="Booking Cancellation" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="180" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="Booking Status&#xa;Pending&#xa;Confirmed&#xa;Canceled&#xa;Completed" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="220" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Payments -->
+        <mxCell id="18" value="Payments" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="400" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="Upfront Payments" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="440" width="140" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="Payouts to Hosts" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="140" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Reviews -->
+        <mxCell id="21" value="Reviews" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" value="Leave Reviewed Ratings" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="440" width="160" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="Respond to Reviews" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="140" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Notifications -->
+        <mxCell id="24" value="Notifications" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="400" width="120" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Admin Dashboard -->
+        <mxCell id="25" value="Admin Dashboard" style="shape=rectangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="480" width="140" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
+
