@@ -1,0 +1,61 @@
+Project airbnb_backend {
+  database_type: "FeatureMap"
+  Note: "Feature and Functionality Blueprint for Airbnb Clone Backend"
+}
+
+Table User_Management {
+  user_registration feature
+  jwt_authentication feature
+  oauth_login optional
+  profile_management feature
+  Note: "Handles user auth, login, and profile updates"
+}
+
+Table Property_Management {
+  add_listing feature
+  edit_listing feature
+  delete_listing feature
+  set_location feature
+  set_price feature
+  set_amenities feature
+  Note: "Host-driven property listings"
+}
+
+Table Booking_System {
+  create_booking feature
+  cancel_booking feature
+  prevent_double_booking feature
+  booking_status feature
+  Note: "Handles availability, reservations, and booking flow"
+}
+
+Table Payments {
+  guest_payment feature
+  host_payout feature
+  multi_currency optional
+  payment_gateway stripe_paypal
+  Note: "Handles secure money flow between users"
+}
+
+Table Reviews {
+  leave_review feature
+  respond_to_review optional
+  link_to_booking feature
+  Note: "Social trust and feedback loop"
+}
+
+Table Notifications {
+  booking_confirmed feature
+  booking_canceled feature
+  payment_update feature
+  in_app_email dual
+  Note: "Notifies users about all booking and payment events"
+}
+
+Table Admin_Dashboard {
+  manage_users feature
+  manage_properties feature
+  manage_bookings feature
+  monitor_payments feature
+  Note: "Administrative interface to monitor platform operations"
+}
