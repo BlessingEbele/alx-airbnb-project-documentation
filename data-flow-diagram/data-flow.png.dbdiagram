@@ -1,0 +1,65 @@
+
+Project airbnb_data_flow {
+  database_type: "FlowMap"
+  Note: "Simulated Data Flow Diagram using dbdiagram-style schema"
+}
+
+Table User {
+  id int [pk]
+  name varchar
+  email varchar
+  Note: "Guest or Host user information"
+}
+
+Table Property {
+  id int [pk]
+  title varchar
+  description text
+  location varchar
+  price decimal
+  amenities json
+  host_id int [ref: > Host.id]
+  Note: "Data from hosts used for property listings"
+}
+
+Table Booking {
+  id int [pk]
+  user_id int [ref: > User.id]
+  property_id int [ref: > Property.id]
+  status enum [values: pending, confirmed, cancelled, completed]
+  start_date date
+  end_date date
+  Note: "Created by users, managed by system"
+}
+
+Table Payment {
+  id int [pk]
+  booking_id int [ref: > Booking.id]
+  amount decimal
+  method enum [values: stripe, paypal, wallet]
+  status enum [values: success, failed, refunded]
+  Note: "Processed after booking confirmation"
+}
+
+Table Review {
+  id int [pk]
+  booking_id int [ref: > Booking.id]
+  user_id int [ref: > User.id]
+  rating int
+  comment text
+  Note: "Submitted after completed bookings"
+}
+
+Table Host {
+  id int [pk]
+  name varchar
+  profile text
+  Note: "Manages properties and responds to bookings"
+}
+
+# Simulated data flow (using references and notes)
+Ref: User.id > Booking.user_id
+Ref: Host.id > Property.host_id
+Ref: Booking.id > Payment.booking_id
+Ref: Booking.id > Review.booking_id
+Ref: Property.id > Booking.property_id
